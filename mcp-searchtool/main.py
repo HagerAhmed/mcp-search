@@ -1,5 +1,5 @@
 from fastmcp import FastMCP
-import httpx
+import requests
 
 mcp = FastMCP("Demo 🚀")
 
@@ -18,7 +18,7 @@ def _download_webpage_impl(url: str) -> str:
         The web page content converted to markdown
     """
     jina_url = f"https://r.jina.ai/{url}"
-    response = httpx.get(jina_url)
+    response = requests.get(jina_url)
     response.raise_for_status()
     return response.text
 

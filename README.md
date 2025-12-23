@@ -55,4 +55,6 @@ Uses Jina Reader to fetch markdown content from URLs.
 
 Located in `mcp-searchtool/`, this tool indices the `fastmcp` documentation for local search.
 
+The search functionality is exposed as an MCP tool `search_fastmcp_docs`.
+
 See [mcp-searchtool/README.md](mcp-searchtool/README.md) for detailed usage instructions.

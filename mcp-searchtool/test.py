@@ -1,4 +1,4 @@
-from main import download_webpage
+from main import _download_webpage_impl
 
 # Test the download_webpage function
 if __name__ == "__main__":
@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print("-" * 50)
     
     try:
-        content = download_webpage(test_url)
+        content = _download_webpage_impl(test_url)
         print("Success! Downloaded content:")
         print("-" * 50)
         print(content[:500])  # Print first 500 characters
